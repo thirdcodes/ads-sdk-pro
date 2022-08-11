@@ -1,2 +1,38 @@
-configurations.maybeCreate("default")
-artifacts.add("default", file('open_ad_sdk.aar'))
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 23
+        //noinspection ExpiredTargetSdkVersion,OldTargetApi
+        targetSdkVersion 28
+        versionCode 4708
+        versionName "4.7.0.8"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {disable 'GoogleAppIndexingWarning'}
+    // Butterknife requires Java 8.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    api project(':csj_ad_sdk')
+}
