@@ -34,5 +34,6 @@ repositories {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
-    api project(':csj_ad_sdk')
+//    api project("com.github.thirdcodes:csj_ad_sdk:4.7.0.8")
+    implementation("com.github.thirdcodes.csj:csj_ad_sdk:4.7.0.8")
 }

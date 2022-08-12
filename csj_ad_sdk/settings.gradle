@@ -1,0 +1,15 @@
+rootDir.run {
+    listOf(
+            "gradle.properties",
+            "gradlew.bat",
+            "gradlew",
+            "gradle/wrapper/gradle-wrapper.jar",
+            "gradle/wrapper/gradle-wrapper.properties"
+    ).map { path ->
+        resolve(path)
+                .copyTo(
+                        target = rootDir.resolve("csj_ad_sdk").resolve(path),
+                        overwrite = true
+                )
+    }
+}
