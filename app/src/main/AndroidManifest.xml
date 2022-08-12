@@ -1,85 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.bytedance.sdk.openadsdk" android:versionCode="4708" android:versionName="4.7.0.8">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bytedance.sdk.openadsdk.t4708"
+    android:versionCode="4708"
+    android:versionName="4.7.0.8">
 
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="29" tools:overrideLibrary="com.bytedance.pangle"/>
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29"
+        tools:overrideLibrary="com.bytedance.pangle" />
 
-    <uses-permission android:name="${applicationId}.openadsdk.permission.TT_PANGOLIN"/>
-    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="${applicationId}.openadsdk.permission.TT_PANGOLIN" />
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
 
-    <permission android:name="${applicationId}.openadsdk.permission.TT_PANGOLIN" android:protectionLevel="signature"/>
+    <permission
+        android:name="${applicationId}.openadsdk.permission.TT_PANGOLIN"
+        android:protectionLevel="signature" />
 
     <queries>
         <intent>
-            <action android:name="android.intent.action.VIEW"/>
+            <action android:name="android.intent.action.VIEW" />
 
-            <category android:name="android.intent.category.BROWSABLE"/>
+            <category android:name="android.intent.category.BROWSABLE" />
 
-            <data android:scheme="https"/>
+            <data android:scheme="https" />
         </intent>
     </queries>
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application>
-        <meta-data android:name="ZEUS_PLUGIN_PANGLE" android:value="{                 apiVersionCode:4708,                 packageName:com.byted.pangle,                 minPluginVersion:4708,                 internalPath:706353064,                 internalVersionCode:4708,                 signature:'MIIDfTCCAmWgAwIBAgIEfRwYPjANBgkqhkiG9w0BAQsFADBvMQswCQYDVQQGEwJDTjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzESMBAGA1UEChMJQnl0ZURhbmNlMQ8wDQYDVQQLEwZQYW5nbGUxFzAVBgNVBAMTDkNodWFuIFNoYW4gSmlhMB4XDTIxMTEwODA2MjQzOVoXDTQ2MTEwMjA2MjQzOVowbzELMAkGA1UEBhMCQ04xEDAOBgNVBAgTB0JlaWppbmcxEDAOBgNVBAcTB0JlaWppbmcxEjAQBgNVBAoTCUJ5dGVEYW5jZTEPMA0GA1UECxMGUGFuZ2xlMRcwFQYDVQQDEw5DaHVhbiBTaGFuIEppYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIBKeRL+4mfCn1SLYv6OemfwwItkjlLPyqOEugkV6lanFTcZgLwEl5LIkL0y28UncPtMX1Mii6DzCdJ/plw7S9+RT/hYDneu339IKWojaU2qai/5FokHlQ0MMnYl5yry00ghVPsl1u+03cQA2ZnjIMiFhrBJpQzHt7IYvq2aEEMBcY8uT7iFoBI848e1mL1joVS2z02C3NliP7ZNARkXH+rTQAlCJulT5IZk+V/PTaKqzgNrkhsKh0/tBmU7m8u79x/xpgGsE19H18AgS4P/9/MDCRe2Z35boZeccaUy2MXCwv3djzUcDk3rRzQPYzdpyyRnrFMuhiKesc5VHgUMs9kCAwEAAaMhMB8wHQYDVR0OBBYEFENENrNWGzc2WhxdvhoMDs57U70zMA0GCSqGSIb3DQEBCwUAA4IBAQAHqDCrmvyBBmIGXwuL1rwS/Qv9ZJIZykBIaNMm+H1IfitCl4yXd9N2n+PjE0UZtxZ21UZOt9wAr+RFiSl5YRXqpt7WLARTy4YW3RiQ+wiL7bshzeSYBoSiC427Bfeq0WjwY0/jHlr8uouppyJOz++6U9hrYX2EW/6UjH5XlWiKQJ6b2ZzPcP8Xpg/TJn4tWvXJP6jw9kRRP2GmMttY78leWQst2QEZILmWJubXRLPj9O+qx2uP9oGTD4sc1vb9hzkOHBIHzGaalqLFbbGaeFpLFHoGTsnOfPTwUVKDZYmxbkcmR1bp7eYOW+nSQNMLn0FjDewZl5l37Sa/gz0WVHon'             }"/>
+        <meta-data
+            android:name="ZEUS_PLUGIN_PANGLE"
+            android:value="{                 apiVersionCode:4708,                 packageName:com.byted.pangle,                 minPluginVersion:4708,                 internalPath:706353064,                 internalVersionCode:4708,                 signature:'MIIDfTCCAmWgAwIBAgIEfRwYPjANBgkqhkiG9w0BAQsFADBvMQswCQYDVQQGEwJDTjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzESMBAGA1UEChMJQnl0ZURhbmNlMQ8wDQYDVQQLEwZQYW5nbGUxFzAVBgNVBAMTDkNodWFuIFNoYW4gSmlhMB4XDTIxMTEwODA2MjQzOVoXDTQ2MTEwMjA2MjQzOVowbzELMAkGA1UEBhMCQ04xEDAOBgNVBAgTB0JlaWppbmcxEDAOBgNVBAcTB0JlaWppbmcxEjAQBgNVBAoTCUJ5dGVEYW5jZTEPMA0GA1UECxMGUGFuZ2xlMRcwFQYDVQQDEw5DaHVhbiBTaGFuIEppYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIBKeRL+4mfCn1SLYv6OemfwwItkjlLPyqOEugkV6lanFTcZgLwEl5LIkL0y28UncPtMX1Mii6DzCdJ/plw7S9+RT/hYDneu339IKWojaU2qai/5FokHlQ0MMnYl5yry00ghVPsl1u+03cQA2ZnjIMiFhrBJpQzHt7IYvq2aEEMBcY8uT7iFoBI848e1mL1joVS2z02C3NliP7ZNARkXH+rTQAlCJulT5IZk+V/PTaKqzgNrkhsKh0/tBmU7m8u79x/xpgGsE19H18AgS4P/9/MDCRe2Z35boZeccaUy2MXCwv3djzUcDk3rRzQPYzdpyyRnrFMuhiKesc5VHgUMs9kCAwEAAaMhMB8wHQYDVR0OBBYEFENENrNWGzc2WhxdvhoMDs57U70zMA0GCSqGSIb3DQEBCwUAA4IBAQAHqDCrmvyBBmIGXwuL1rwS/Qv9ZJIZykBIaNMm+H1IfitCl4yXd9N2n+PjE0UZtxZ21UZOt9wAr+RFiSl5YRXqpt7WLARTy4YW3RiQ+wiL7bshzeSYBoSiC427Bfeq0WjwY0/jHlr8uouppyJOz++6U9hrYX2EW/6UjH5XlWiKQJ6b2ZzPcP8Xpg/TJn4tWvXJP6jw9kRRP2GmMttY78leWQst2QEZILmWJubXRLPj9O+qx2uP9oGTD4sc1vb9hzkOHBIHzGaalqLFbbGaeFpLFHoGTsnOfPTwUVKDZYmxbkcmR1bp7eYOW+nSQNMLn0FjDewZl5l37Sa/gz0WVHon'             }" />
 
-        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:launchMode="standard" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:launchMode="standard" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:launchMode="standard" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:launchMode="standard" android:screenOrientation="landscape" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:launchMode="singleTask" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity" android:configChanges="orientation|keyboardHidden|navigation|screenSize" android:exported="false" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
 
-        <provider android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager" android:authorities="${applicationId}.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost" android:exported="false" android:process=":downloader"/>
-        <provider android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager" android:authorities="${applicationId}.pangle.servermanager.main" android:exported="false"/>
-        <provider android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider" android:authorities="${applicationId}.TTMultiProvider" android:exported="false"/>
-        
-        <provider android:name="com.bytedance.pangle.provider.MainProcessProviderProxy" android:authorities="${applicationId}.pangle.provider.proxy.main" android:exported="false"/>
-        <provider android:name="com.bytedance.pangle.FileProvider" android:authorities="${applicationId}.pangle.fileprovider" android:grantUriPermissions="true" android:exported="false"/>
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
+            android:authorities="${applicationId}.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+            android:exported="false"
+            android:process=":downloader" />
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"
+            android:authorities="${applicationId}.pangle.servermanager.main"
+            android:exported="false" />
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
 
-        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity" android:exported="false"/>
-        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity" android:exported="false"/>
-        <activity android:name="com.ss.android.downloadlib.activity.TTDelegateActivity" android:launchMode="singleTask" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false"/>
-        <activity android:name="com.ss.android.downloadlib.activity.JumpKllkActivity" android:launchMode="singleTask" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false"/>
+        <provider
+            android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
+            android:authorities="${applicationId}.pangle.provider.proxy.main"
+            android:exported="false" />
+        <provider
+            android:name="com.bytedance.pangle.FileProvider"
+            android:authorities="${applicationId}.pangle.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
 
-        <receiver android:name="com.ss.android.downloadlib.core.download.DownloadReceiver" android:exported="false"/> 
-        <service android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService" android:exported="false"/> 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <activity android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity" android:launchMode="singleTask" android:theme="@android:style/Theme.Dialog" android:exported="false"/>
-        <activity android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity" android:launchMode="singleTask" android:theme="@android:style/Theme.Dialog" android:exported="false"/>
+        <activity
+            android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ss.android.downloadlib.activity.TTDelegateActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.ss.android.downloadlib.activity.JumpKllkActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <service android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService" android:enabled="true" android:exported="false" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" android:exported="false" android:process=":downloader">
+        <receiver
+            android:name="com.ss.android.downloadlib.core.download.DownloadReceiver"
+            android:exported="false" />
+        <service
+            android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService"
+            android:exported="false" />
+
+
+        <activity
+            android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service
+            android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+            android:exported="false"
+            android:process=":downloader">
             <intent-filter>
-                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+                <action android:name="com.ss.android.socialbase.downloader.remote" />
             </intent-filter>
         </service>
-        <service android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" android:exported="false"/>
-        <service android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" android:exported="false"/>
-        <service android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" android:exported="false"/> 
-        
-        
-        
-        
-        
-        <service android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" android:exported="false"/>
+        <service
+            android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService"
+            android:exported="false" />
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.DownloadService"
+            android:exported="false" />
+        <service
+            android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService"
+            android:exported="false" />
+
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService"
+            android:exported="false" />
     </application>
 
 </manifest>
