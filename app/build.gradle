@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
-        minSdkVersion 23
+        minSdkVersion 16
         //noinspection ExpiredTargetSdkVersion,OldTargetApi
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 4708
         versionName "4.7.0.8"
         multiDexEnabled true
