@@ -33,7 +33,7 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-
-//    api project("com.github.thirdcodes:csj_ad_sdk:4.7.0.8")
-    implementation("com.github.thirdcodes.csj:csj_ad_sdk:4.7.0.8")
+    //noinspection GradleDependency
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
 }

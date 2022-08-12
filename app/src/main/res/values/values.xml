@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <color name="tt_appdownloader_notification_material_background_color">#fffafafa</color>
+    <color name="tt_appdownloader_notification_title_color">#7f0b0198</color>
+    <color name="tt_appdownloader_s1">#333333</color>
+    <color name="tt_appdownloader_s13">#cccccc</color>
+    <color name="tt_appdownloader_s18">#eeeeee</color>
+    <color name="tt_appdownloader_s4">#ff819f</color>
+    <color name="tt_appdownloader_s8">#ffffff</color>
+    <color name="ttdownloader_transparent">#00000000</color>
+    <string name="tt_appdownloader_button_cancel_download">"取消"</string>
+    <string name="tt_appdownloader_button_queue_for_wifi">"排队"</string>
+    <string name="tt_appdownloader_button_start_now">"立即开始"</string>
+    <string name="tt_appdownloader_download_percent">"<ns1:g id="NUMBER">%1$d</ns1:g><ns1:g id="PERCENT">%%</ns1:g>"</string>
+    <string name="tt_appdownloader_download_remaining">"剩余时间：<ns1:g id="DURATION">%1$s</ns1:g>"</string>
+    <string name="tt_appdownloader_download_unknown_title">"&lt;未命名>"</string>
+    <string name="tt_appdownloader_duration_hours"><ns1:g id="count">%1$d</ns1:g> 小时</string>
+    <string name="tt_appdownloader_duration_minutes"><ns1:g id="count">%1$d</ns1:g> 分钟</string>
+    <string name="tt_appdownloader_duration_seconds"><ns1:g id="count">%1$d</ns1:g> 秒</string>
+    <string name="tt_appdownloader_jump_unknown_source">请打开应用安装权限，以便顺利安装！</string>
+    <string name="tt_appdownloader_label_cancel">取消</string>
+    <string name="tt_appdownloader_label_cancel_directly">直接取消</string>
+    <string name="tt_appdownloader_label_ok">确定</string>
+    <string name="tt_appdownloader_label_reserve_wifi">Wi-Fi下恢复</string>
+    <string name="tt_appdownloader_notification_download">"下载"</string>
+    <string name="tt_appdownloader_notification_download_complete_open">"下载完成，点击打开。"</string>
+    <string name="tt_appdownloader_notification_download_complete_with_install">"下载完成，点击安装。"</string>
+    <string name="tt_appdownloader_notification_download_complete_without_install">"下载完成"</string>
+    <string name="tt_appdownloader_notification_download_continue">"下载暂停中，点击继续。"</string>
+    <string name="tt_appdownloader_notification_download_delete">"确认要删除%1$s的下载任务吗？"</string>
+    <string name="tt_appdownloader_notification_download_failed">"下载失败。"</string>
+    <string name="tt_appdownloader_notification_download_install">"安装"</string>
+    <string name="tt_appdownloader_notification_download_open">"打开"</string>
+    <string name="tt_appdownloader_notification_download_pause">"暂停"</string>
+    <string name="tt_appdownloader_notification_download_restart">"重新下载"</string>
+    <string name="tt_appdownloader_notification_download_resume">"继续"</string>
+    <string name="tt_appdownloader_notification_download_space_failed">"SdCard空间不足, 下载失败。"</string>
+    <string name="tt_appdownloader_notification_download_waiting_net">"等待网络继续下载"</string>
+    <string name="tt_appdownloader_notification_download_waiting_wifi">"等待wifi开始下载"</string>
+    <string name="tt_appdownloader_notification_downloading">"正在下载"</string>
+    <string name="tt_appdownloader_notification_install_finished_open">"安装完成，点击打开。"</string>
+    <string name="tt_appdownloader_notification_insufficient_space_error">"空间不足 还需<ns1:g>%1$s</ns1:g>"</string>
+    <string name="tt_appdownloader_notification_need_wifi_for_size">"文件过大，需要通过 WLAN 下载。"</string>
+    <string name="tt_appdownloader_notification_no_internet_error">"下载异常，请检查网络"</string>
+    <string name="tt_appdownloader_notification_no_wifi_and_in_net">"无Wi-Fi 已暂停"</string>
+    <string name="tt_appdownloader_notification_paused_in_background">"已在后台暂停。"</string>
+    <string name="tt_appdownloader_notification_pausing">"暂停中"</string>
+    <string name="tt_appdownloader_notification_prepare">"准备中"</string>
+    <string name="tt_appdownloader_notification_request_btn_no">"立即下载"</string>
+    <string name="tt_appdownloader_notification_request_btn_yes">"去设置"</string>
+    <string name="tt_appdownloader_notification_request_message">"为了您能在方便地在通知栏控制下载任务，请到设置中开启通知，如果不需要可直接下载"</string>
+    <string name="tt_appdownloader_notification_request_title">"设置"</string>
+    <string name="tt_appdownloader_notification_waiting_download_complete_handler">"处理中"</string>
+    <string name="tt_appdownloader_resume_in_wifi">"您当前处于移动网络，是否需要在Wi-Fi环境下恢复下载？"</string>
+    <string name="tt_appdownloader_tip">提示</string>
+    <string name="tt_appdownloader_wifi_recommended_body">"立即开始下载此内容 (<ns1:g id="SIZE">%1$s </ns1:g>) 可能会缩短电池的使用时间并/或导致过量使用移动数据连接流量（这可能导致移动运营商向您收费，具体取决于您的流量套餐）。\n\n触摸“<ns1:g id="QUEUE_TEXT">%2$s</ns1:g>”可在下次连接到 WLAN 网络时开始下载此内容。"</string>
+    <string name="tt_appdownloader_wifi_recommended_title">"稍后再加入下载队列吗？"</string>
+    <string name="tt_appdownloader_wifi_required_body">"您必须使用 WLAN 完成此内容 (<ns1:g id="SIZE">%1$s </ns1:g>) 的下载。\n\n触摸“<ns1:g id="QUEUE_TEXT">%2$s </ns1:g>”可在下次连接到 WLAN 网络时开始下载此内容。"</string>
+    <string name="tt_appdownloader_wifi_required_title">"文件太大，不适于通过运营商网络下载"</string>
+    <style name="tt_appdownloader_style_detail_download_progress_bar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/tt_appdownloader_ad_detail_download_progress</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:maxHeight">32dp</item>
+    </style>
+    <style name="tt_appdownloader_style_notification_text" parent="android:TextAppearance.StatusBar.EventContent"/>
+    <style name="tt_appdownloader_style_notification_title" parent="android:TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="tt_appdownloader_style_progress_bar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/tt_appdownloader_download_progress_bar_horizontal</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:maxHeight">6dp</item>
+    </style>
+    <style name="tt_appdownloader_style_progress_bar_new" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/tt_appdownloader_download_progress_bar_horizontal_new</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:maxHeight">6dp</item>
+    </style>
+    <style name="ttdownloader_translucent_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/ttdownloader_transparent</item>
+        <item name="android:windowBackground">@color/ttdownloader_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>
